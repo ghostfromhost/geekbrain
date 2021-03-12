@@ -1,0 +1,7 @@
+cd ~/
+ls
+cd example
+ls
+cd ~/
+ls --help
+ls -R

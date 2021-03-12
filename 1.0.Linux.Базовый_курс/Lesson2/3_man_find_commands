@@ -1,0 +1,2 @@
+man find
+sudo find /etc -name "*.yaml"

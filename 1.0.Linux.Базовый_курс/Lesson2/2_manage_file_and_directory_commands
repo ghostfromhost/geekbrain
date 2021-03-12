@@ -1,0 +1,9 @@
+touch example1
+touch example2
+mkdir example_dir
+mv example1 example_dir
+mv example2 example_dir
+cp /var/log/syslog example_dir
+tar -cf example.tar example_dir
+rm example.tar
+history
