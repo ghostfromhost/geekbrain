@@ -1,0 +1,2 @@
+cat /etc/* 2> ~/errors
+grep -c '/etc/*' ~/errors

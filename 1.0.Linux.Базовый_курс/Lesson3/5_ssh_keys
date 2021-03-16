@@ -1,0 +1,9 @@
+# В PuTTYgen сгенерировать пару ключей
+# Сохранить их
+# публичный ключ привести к виду ssh-rsa AAA... в одну строку
+# скопировать его на сервер в файл ~/.ssh/authorized_keys
+# редактировать конфиг файл /etc/ssh/sshd_config, установить настройку PasswordAuthentication no
+nano /etc/ssh/sshd_config
+# перезапустить sshd
+service sshd restart
+# зайти через PuTTY используя сохранённый приватный ключ

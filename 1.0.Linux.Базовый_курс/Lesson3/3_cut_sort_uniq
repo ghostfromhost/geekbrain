@@ -1,0 +1,1 @@
+ls -l | cut -f 1 -d ' ' | sort | uniq | grep -v total | wc -l
