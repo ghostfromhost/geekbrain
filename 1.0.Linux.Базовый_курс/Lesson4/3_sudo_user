@@ -1,0 +1,2 @@
+sudo useradd -m -G sudo -s /bin/bash super_user
+sudo sudoedit /etc/sudoers # В редакторе в поле для группы sudo меняем действия ALL на NOPASSWD:ALL

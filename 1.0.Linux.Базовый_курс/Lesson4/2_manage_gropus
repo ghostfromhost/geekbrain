@@ -1,0 +1,5 @@
+sudo groupadd administrators
+sudo groupadd other_users
+sudo useradd  -m -G other_users -s /bin/bash new_admin
+sudo usermod -a -G administrators new_admin
+sudo gpasswd -d new_admin other_users

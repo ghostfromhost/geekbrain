@@ -1,0 +1,6 @@
+sudo groupadd developers
+sudo useradd -m -G developers -s /bin/bash developer1
+sudo useradd -m -G developers -s /bin/bash developer2
+mkdir dir_developers
+sudo chgrp developers dir_developers
+sudo chmod g+s dir_developers
