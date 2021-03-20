@@ -1,6 +1,6 @@
 touch file1
 touch file2
-sudo chmod ug=rw,o=f file1
+sudo chmod ug=rw,o=r file1
 sudo chmod 664 file1
 sudo chmod u=rw,go= file2
 sudo chmod 600 file2
