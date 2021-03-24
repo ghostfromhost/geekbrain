@@ -1,0 +1,1 @@
+sudo ln -s /mnt/ext4/file4 /mnt/xfs/link

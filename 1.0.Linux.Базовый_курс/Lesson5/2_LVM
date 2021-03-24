@@ -1,0 +1,9 @@
+sudo parted /dev/sdb
+set 2 lvm on
+quit
+sudo pvcreate /dev/sdb2
+sudo vgcreate myvg_vg /dev/sdb2
+sudo lvcreate -n mylv_lv -L 100M myvg_vg
+sudo mkfs.xfs /dev/myvg_vg/mylv_lv
+sudo mkdir /mnt/xfs
+sudo mount /dev/myvg_vg/mylv_lv /mnt/xfs

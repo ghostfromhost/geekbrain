@@ -1,0 +1,9 @@
+sudo parted /dev/sdb
+mklabel gpt
+mkpart #name: partition1 , start: 0, end: 150, Ignore/Cancel: ignore
+mkpart #name: partition2 , start: 150, end: 300, Ignore/Cancel: ignore
+quit
+sudo mkfs.ext4 /dev/sdb1
+sudo mkdir /mnt/ext4
+sudo mount /dev/sdb1 /mnt/ext4
+sudo nano /etc/fstab #type in the end '/dev/sdb1	/mnt/ext4	ext4	defaults	0	0' and save

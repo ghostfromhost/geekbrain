@@ -1,0 +1,8 @@
+sudo bash -c 'echo some text > /mnt/ext4/file1'
+cd /mnt/ext4
+sudo cp file1 file2
+sudo ln -s file1 file3
+sudo ln file1 file4
+ls -i
+sudo rm file1 #file3 ссылается на несуществуюищй файл
+ls
