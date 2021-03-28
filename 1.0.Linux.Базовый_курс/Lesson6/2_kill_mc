@@ -1,0 +1,4 @@
+sudo apt-get install -y mc
+mc
+pgrep -xl mc #В другом терминале
+sudo kill 9 2915

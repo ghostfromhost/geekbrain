@@ -1,0 +1,5 @@
+nano my_ping # текст вы my_ping
+nano /etc/systemd/system/my_ping.service # текст в my_ping.service 
+systemctl daemon-reload
+systemctl start my_ping.service
+sudo top # находим процесс с названием my_ping, нажимаем k, Вводим pid этого процесса 1385, сигнал 15

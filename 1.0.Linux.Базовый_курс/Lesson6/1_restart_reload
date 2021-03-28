@@ -1,0 +1,4 @@
+sudo nano /etc/ssh/sshd_config #PasswordAuthentication no
+systemctl restart sshd
+sudo nano /etc/ssh/sshd_config #PasswordAuthentication yes
+systemctl reload sshd #restart перезапускает службу, reload перечитывает конфигурационный файл службы
