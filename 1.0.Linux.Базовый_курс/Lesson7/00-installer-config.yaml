@@ -1,0 +1,11 @@
+network: 
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      addresses:
+        - 192.168.43.104/24
+      gateway4: 192.168.43.1
+      nameservers:
+        addresses:
+          - 192.168.43.1

@@ -1,0 +1,4 @@
+ip addr # смотрим ip адресс машины
+ip route show #смотрим адресс маршрутизатора, шлюза
+nano /etc/netplan/00-installer-config.yaml # текст в 00-installer-config.yaml
+sudo netplan apply
