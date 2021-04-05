@@ -1,0 +1,10 @@
+sudo apt install tftpd-hpa
+nano /etc/default/tftpd-hpa #в поле TFTP_OPTIONS добавляем параметр --create
+systemctl start tftpd-hpa.service
+sudo bash -c 'echo "some text 1" > /srv/tftp/file1'
+sudo bash -c 'echo "some text 2" > file2' 
+sudo tftp 192.168.43.104
+get file1 
+put file2
+cat file1
+cat /srv/tftp/file2 

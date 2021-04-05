@@ -1,0 +1,8 @@
+sudo apt install nginx
+sudo nano /etc/nginx/nginx.conf # Содержимое в nginx.conf
+sudo mkdir -p /srv/www/conf
+sudo bash -c 'echo "Some main" > /srv/www/main'
+sudo bash -c 'echo "Some main conf" > /srv/www/conf/main.cfg'
+sudo nginx -t # Проверяем правильность nginx.conf
+sudo systemctl reload nginx.service
+# Заходим в браузер и проверяем для 192.168.43.104/main и для 192.168.43.104/main.cfg
