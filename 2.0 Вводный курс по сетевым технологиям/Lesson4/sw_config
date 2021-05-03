@@ -1,0 +1,12 @@
+# Настройки одинаковы для двух свичей за исключением ip адресов (10.1.1.1 и 10.1.1.2)
+enable
+configure terminal
+username vasya password vasyapassword123
+enable password 123
+line vty 0 15
+login local
+exit
+interface gigabitEthernet 0/0
+no switchport
+ip address 10.1.1.1 255.255.255.0
+exit
